@@ -15,7 +15,7 @@ function App() {
 			</div>
 			<BrowserRouter>
 				<Routes>
-					<Route eaxct path="/" element={<Welcome />} />
+					<Route eaxct path="/Onboarding-System" element={<Welcome />} />
 					<Route path="/addworkspacedetails" element={<AddWorkspaceDetails/>} />
 					<Route path="/workspacepack" element={<WorkspacePack />} />
 					<Route path="/success" element={<Success />} />
