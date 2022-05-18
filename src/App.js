@@ -1,28 +1,28 @@
-import './App.css';
-import Home from './Components/Home';
-import Page2 from "./Components/Page2";
-// import Page3 from "./Components/Page3";
-import {Routes ,Route ,BrowserRouter } from "react-router-dom";
+import "./App.css";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Welcome from "./Components/Welcome";
+import AddWorkspaceDetails from "./Components/AddWorkspaceDetails";
+import WorkspacePack from "./Components/WorkspacePack";
+import Success from "./Components/Success";
+import logo from "./public/Icons/logo.png";
+
 function App() {
-  return (
-    
-    <div className="App">
-      <BrowserRouter>
-      <Routes>
-      <Route eaxct path="/" element={<Home/>} />
-      <Route path="/page2" element={<Page2/>} />
-      </Routes>
-      </BrowserRouter>
-     {/* <Route path="/page3" >
-     <Page3 />
-     </Route> */}
-     {/* <Route path="/page4" >
-     <Page4 />
-     </Route> */}
-     
-    </div>
-    
-  );
+	return (
+		<div className="App">
+			<div className="logo-desc-img">
+				<img src={logo} alt="logo-image" className="logo-img"/>
+			<p className="Logo">Eden</p>
+			</div>
+			<BrowserRouter>
+				<Routes>
+					<Route eaxct path="/" element={<Welcome />} />
+					<Route path="/addworkspacedetails" element={<AddWorkspaceDetails/>} />
+					<Route path="/workspacepack" element={<WorkspacePack />} />
+					<Route path="/success" element={<Success />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

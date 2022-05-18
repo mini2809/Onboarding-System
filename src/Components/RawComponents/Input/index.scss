@@ -1,35 +1,67 @@
-.input-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+.input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
 }
-.label{
-    width: 360px;
-    text-align: start;
-    color:dimgray;
-    line-height: 30px;
-    font-family: Inter;
-    font-size: 14px;
+.label {
+	width: 360px;
+	text-align: start;
+	color: dimgray;
+	line-height: 30px;
+	font-family: Inter;
+	font-size: 12px;
+	font-weight: bold;
 }
-.input-field{
-    all:unset;
-    height: 30px;
-    color: lightgray;
-    font-family:Inter;
-    font-size: 14px;
-    padding: 10px;
-    width: 350px;
-    border: 1px solid lightgray;
-    border-radius: 6px;
-    text-align: left;
-    font-weight: bold;
+.input-field {
+	all: unset;
+	height: 30px;
+	font-family: Inter;
+	font-size: 14px;
+	padding: 10px;
+	width: 350px;
+	border: 1px solid lightgray;
+	border-radius: 6px;
+	text-align: left;
+	font-weight: bold;
 }
-input::placeholder{
-    text-align: left;
-    font-size: 12px;
-    font-weight: bold;
-    color: lightgray;
-
+input::placeholder {
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+	color: lightgray;
+}
+@media screen and (max-width: 300px) {
+	.label {
+		width: 250px;
+		text-align: start;
+		color: dimgray;
+		line-height: 30px;
+		font-family: Inter;
+		font-size: 8px;
+		font-weight: bold;
+	}
+	.input-field {
+		all: unset;
+		height: 20px;
+		font-family: Inter;
+		font-size: 14px;
+		padding: 10px;
+		width: 250px;
+		border: 1px solid lightgray;
+		border-radius: 4px;
+		text-align: left;
+		font-weight: bold;
+	}
+	input::placeholder {
+		text-align: left;
+		font-size: 8px;
+		font-weight: bold;
+		color: lightgray;
+	}
+}
+.error{
+	
+	border-color: red;
 }

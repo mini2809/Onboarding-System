@@ -1,4 +1,13 @@
 .App {
   text-align: center;
 }
+.logo-desc-img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.logo-img{
+  height: 25px;
+  margin: auto 0;;
+}
 

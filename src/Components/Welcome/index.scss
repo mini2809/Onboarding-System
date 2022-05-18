@@ -1,0 +1,18 @@
+.spaces{
+    margin: 40px;
+}
+.Logo{
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 300px) {
+    .Logo{
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: bolder;
+        margin-left: 5px; 
+    }
+  }

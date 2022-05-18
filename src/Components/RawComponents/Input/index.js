@@ -1,12 +1,15 @@
 import "./index.scss";
-import {useState} from "react";
+import {useDispatch} from "react-redux";
 
 function Input(props){
-    const [input,setInput] = useState("");
+    const dispatch = useDispatch();
     return(
         <div className="input-container">
             <label className="label">{props.label}</label>
-            <input className="input-field" placeholder={props.placeholder} id={props.id} value={input} onChange={(e)=>setInput(e.target.value)} />
+            <input type={props.type} className="input-field"  placeholder={props.placeholder} id={props.id} value={props.field } onChange={(e)=>{
+                dispatch(props.ChangeHandle(e.target.value));
+                props.HandleValidation();
+            }}  />
         </div>
     )
 }
